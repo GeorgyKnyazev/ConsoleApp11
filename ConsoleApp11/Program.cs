@@ -13,8 +13,8 @@ namespace ConsoleApp11
 
             Stack<string> stackOfString = new Stack<string>();
 
-            Test(arrayOfString1, stackOfString);
-            Test(arrayOfString2, stackOfString);
+            ExcludeRepetitions (arrayOfString1, stackOfString);
+            ExcludeRepetitions (arrayOfString2, stackOfString);
 
             while (stackOfString.Count > 0)
             {
@@ -23,7 +23,7 @@ namespace ConsoleApp11
             Console.ReadLine();
         }
 
-        static void Test(string[] array, Stack<string> stack)
+        static void ExcludeRepetitions (string[] array, Stack<string> stack)
         {
             for (int i = 0; i < array.Length; i++)
             {
